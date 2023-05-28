@@ -1,0 +1,9 @@
+<h3>Article List</h3>
+<div *ngFor="let article of articles | async" [ngClass]= "'sub-child-menu'">
+  <b>{{article.title}}</b>  
+  <p> {{article.description}}</p>
+  <img ngSrc="{{article.thumbnail}}" width="500" height="300"/>
+</div>
+<!-- <div [ngClass]= "'sub-child-container'">
+	<router-outlet></router-outlet>  
+</div>   -->
